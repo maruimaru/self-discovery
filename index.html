@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="質問に答えて、ものづくりやチームスポーツでのあなたらしい関わり方を見つけよう。">
+<title>自分の持ち味、見つけてみよう！</title>
+<style>
+:root{color-scheme:light;--ink:#19283f;--muted:#526277}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:#f3f6fb;line-height:1.8}
+main{max-width:920px;margin:auto;padding:48px 22px 32px}header{text-align:center;margin-bottom:32px}.badge{display:inline-block;border-radius:999px;padding:5px 16px;background:#e4eafc;color:#35488b;font-size:.85rem;font-weight:700}
+h1{font-size:clamp(1.65rem,5vw,2.65rem);line-height:1.5;letter-spacing:.02em;margin:16px 0 12px;text-wrap:balance}.intro{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:white;border:2px solid #dce4ef;border-radius:22px;padding:28px;box-shadow:0 8px 24px #152b4510;transition:transform .15s,border-color .15s}.card:hover{transform:translateY(-3px);border-color:var(--accent)}.card:focus-visible{outline:4px solid #19283f;outline-offset:5px}.making{--accent:#7048c6;--soft:#f1ebfc}.sports{--accent:#147b71;--soft:#e5f5ef}.icon{width:72px;height:72px;border-radius:18px;background:var(--soft);display:grid;place-items:center;color:var(--accent)}svg{width:44px;height:44px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+h2{font-size:1.4rem;line-height:1.55;margin:20px 0 10px}.card p{color:var(--muted);margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}.tag{font-size:.8rem;background:var(--soft);color:var(--accent);border-radius:8px;padding:3px 10px;font-weight:600}.action{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-radius:12px;background:var(--accent);color:#fff;font-weight:700}
+.note{margin-top:30px;background:white;border:1px solid #dce4ef;border-radius:16px;padding:20px 24px}.note h2{font-size:1rem;margin:0 0 8px}.note p{font-size:.9rem;color:var(--muted);margin:0}.note p+p{margin-top:8px}footer{text-align:center;font-size:.8rem;color:var(--muted);margin-top:24px}
+@media(max-width:620px){main{padding:30px 18px 24px}.cards{grid-template-columns:1fr;gap:18px}.card{padding:24px}header{margin-bottom:26px}.note{padding:18px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="badge">自己理解・診断ひろば</span>
+<h1>自分の持ち味、<br>見つけてみよう！</h1>
+<p class="intro">質問に答えて、あなたらしい関わり方を探してみよう。<br>気になる診断を選んで、気軽に体験してください。</p>
+</header>
+<nav class="cards" aria-label="診断を選ぶ">
+<!-- 新しい診断を追加するときは、ここへ同じ構造のリンクカードを追加してください。リンクは相対パスです。 -->
+<a class="card making" href="./making/">
+<div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M16 29c-4-3-6-6-6-11a14 14 0 0 1 28 0c0 5-2 8-6 11l-2 7H18zM18 40h12M21 44h6M24 8v4M16 18l4 4M32 18l-4 4M24 23v12"/></svg></div>
+<h2>モノづくり判定</h2>
+<p>アイデアを出す、作って試す、仲間を支える。制作チームでのあなたの持ち味を見つけよう。</p>
+<div class="tags"><span class="tag">49問</span><span class="tag">7タイプ</span></div>
+<span class="action">診断をはじめる <span aria-hidden="true">→</span></span>
+</a>
+<a class="card sports" href="./sports/">
+<div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="19"/><path d="m24 15 9 7-4 10H19l-4-10zM24 15V5M33 22l9-4M29 32l6 8M19 32l-6 8M15 22l-9-4"/></svg></div>
+<h2>スポーツポジション判定</h2>
+<p>挑戦する、変化に気づく、仲間とつながる。チームスポーツでのあなたらしい関わり方を見つけよう。</p>
+<div class="tags"><span class="tag">35問</span><span class="tag">7タイプ</span></div>
+<span class="action">診断をはじめる <span aria-hidden="true">→</span></span>
+</a>
+</nav>
+<section class="note" aria-labelledby="about-heading">
+<h2 id="about-heading">体験する前に</h2>
+<p>楽しみながら自己理解するためのコンテンツです。能力や実際の適性を断定するものではありません。結果は今回の回答に基づく目安として、仲間との会話や、新しい役割に挑戦するきっかけにしてください。</p>
+<p>複数のタイプが高くても、すべて同点でもかまいません。どのタイプにも、それぞれの持ち味があります。</p>
+</section>
+<footer>あなたの持ち味も、仲間の持ち味も、大切に。</footer>
+</main>
+</body>
+</html>
